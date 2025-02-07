@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/forestSong.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">NarrativeRealm</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./tips.html">Tips</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index_second.html">Recomended Books</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="./forestSong.html">Forest Song</a>
+                      <a href="./paintedFox.html">Painted Fox</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <div class="container">
+            <h1>Фарбований лис</h1>
+            <button id="startListening">Увімкнути розпізнавання голосу</button>
+            <div class="full_block">
+                <div id="catalog"></div>
+                <div class="content">
+                    <p id="status">Натисніть "Увімкнути розпізнавання голосу" та прочитайте ключове слово.</p>
+                    <div id="imageContainer"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script type="module">
+        const books = [
+            { id: 1, title: "Жив собі в одному лісі Лис Микита, хитрий-прехитрий. Скільки мисливці на нього не полювали, він завжди втікав, оминав пастки, ще й товаришів застерігав від небезпеки. Надзвичайне везіння та хитрість зробили Лиса страшенно гордим. Він похвалився перед друзями, що серед білого дня вкраде на базарі курку. Сказав — треба зробити. Непомітно пробрався городами до середини міста, але коли вискочив на вулицю, то його почули пси й кинулися до нього. Що робити? Куди дітися? Лис побачив одчинені ворота й чкурнув туди. На подвір`ї стояла діжа з фарбою. Йому нічого не залишалося, як пірнути в ту фарбу. Пси й не здогадалися, бо від діжі йшов такий неприємний запах. Отже, Лис урятувався, але якою ціною! Як йому в такому вигляді з'явитися на вулиці? Довелося так аж до самого вечора сидіти, завмираючи від страху, що надійде господар-маляр. Коли смеркло, Микита чимдуж чкурнув до лісу, ускочив у якусь нору та й заснув. Уранці прокинувся в доброму настрої, подумав, що зараз підхожий час для полювання, але, зиркнувши на себе, скрикнув і кинувся тікати з переляку. Та від себе ж не втечеш! Став він якимсь дивним і страшним звіром, синім-синім, укритим чи лускою, чи їжаковими колючками, із хвостом, як довбня. Що лишень не пробував — обтріпатися, обкачатися, обдряпати фарбу — нічого не виходить! Де не взявся Вовчик-Братик. Як побачив нечуваного синього звіра — аж завив з переляку й кинувся тікати. Звірі, що бачили Вовчика в такому стані, здивувалися, стали розпитувати і, не добившись нічого, пішли в той бік, куди показував Вовк. Побачили — і собі врозтіч. А Лис Микита, бачачи, яке враження справив, подумав, що не так усе й погано. Пішов і сів посеред майдану, де всі лісові мешканці збиралися. Незабаром позбігалося багато звірів, але підступити бояться. Тоді Лис перший ласкаво до них заговорив. Він сказав, що Святий Миколай виліпив його з небесної глини, назвав Остромислом і призначив царем над усіма звірами. У звіринім царстві запанувала радість. Орли та яструби наловили курей, вовки та ведмеді нарізали овець, телят і віднесли новому цареві. Той узяв часточку собі, а решту віддав голодним. Усі хвалили царську доброту та мудрість. Лис Микита був добрим царем, жив на всьому готовому. І справедливість у нього була, як звичайно у звірів: хто дужчий, той і правий, а хто слабший, той ніколи не вигравав справи. Жили собі звірі з новим царем, як і без нього: хто що зловив, те й їв; кого спіймали, той гинув, а хто втік, той радів. Але всі були вдоволені, що мають такого мудрого й не схожого на інших звірів царя. Лис Микита дуже беріг своє синє хутро, боявся, щоб із нього не злізла фарба і його не впізнали. Минув рік. Звірі вирішили відзначити ювілей і влаштували великий концерт. Ведмеді ревли басом, вовки завивали соло. Але як молоді лисички в народному вбранні задзявкотіли тоненькими тенорами, цар не зміг устояти. Він підняв морду і задзявкотів по-лисячому. Що тут зробилося! Усі відразу впізнали Лиса. Люті за обман, забувши про всі добродійства царя, звірі кинулися на Лиса й розірвали його."},            
+        ];
+
+        const keywords = [
+            { word: "Лис Микита", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLWm7KnsoCPt5Sc1E_ltSJktG6us8fEvbRJQ&s" },
+            { word: "ліс", image: "https://st5.depositphotos.com/12546280/63855/v/450/depositphotos_638556134-stock-illustration-landscape-nature-green-forest-mountain.jpg" },
+            { word: "мисливці", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP9YERqSOyrQ1Lyjax3wDWG0WbXy9-jJ2UIPzs7L8HbDqG9Ij3CspKPvrFOrgPEY5n2-g&usqp=CAU" },
+            { word: "курка", image: "https://st4.depositphotos.com/1967477/20313/v/450/depositphotos_203132380-stock-illustration-chicken-hen-waving-hand-white.jpg" },
+            { word: "пси", image: "https://media.istockphoto.com/id/990360418/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D1%84%D0%B8%D0%BB%D1%8C%D0%BC-%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8-%D1%82%D1%80%D1%8E%D0%BA%D0%B8-%D0%B8-%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D1%8F-%D0%BA%D0%BE%D0%BF%D0%B0%D1%82%D1%8C-%D0%B3%D1%80%D1%8F%D0%B7%D1%8C-%D0%B5%D1%81%D1%82%D1%8C-%D0%BA%D0%BE%D1%80%D0%BC%D0%B0-%D0%B4%D0%BB%D1%8F-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8%D1%85.jpg?s=612x612&w=0&k=20&c=krsI0CKB5MctPTxOGUszd6QXw1kDzxvfpUxO7Cc13yI=" },
+            { word: "діжа з фарбою", image: "https://dovidka.biz.ua/wp-content/uploads/2014/09/farbovaniy-lis-chitati-povn-styu.png" },
+            { word: "Святий Миколай", image: "https://imglife.pravda.com.ua/images/doc/9/c/9c62d02-537.-------------------2023-12-05t231535.jpg" },
+            { word: "ведмеді", image: "https://images.kinorium.com/movie/shot/2390870/h280_51941068.jpg?21694997538" },
+            { word: "вовки", image: "https://images.kinorium.com/movie/shot/733001/h280_52117084.jpg?21702726149" },
+            { word: "лисички", image: "https://ntn.ua/uploads/tv_product/2020/07/24/5eebfcb177114ec155ad78c3f11dbc8aeff45a29.png" }
+        ];
+    
+        function displayCatalog() {
+            const catalog = document.getElementById("catalog");
+            books.forEach(book => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+                card.innerHTML = `
+                    <p>${book.title}</p>
+                    <p>Автор: Леся Українка</p>
+                `;
+                catalog.appendChild(card);
+            });
+        }
+    
+        displayCatalog();
+    
+        if ('webkitSpeechRecognition' in window) {
+            const recognition = new webkitSpeechRecognition();
+            recognition.lang = "uk-UA";
+            recognition.continuous = true;
+            recognition.interimResults = false;
+    
+            document.getElementById("startListening").onclick = () => {
+                recognition.start();
+                document.getElementById("status").innerText = "Слухаю...";
+            };
+    
+            recognition.onresult = (event) => {
+                const transcript = event.results[event.results.length - 1][0].transcript.trim();
+                document.getElementById("status").innerText = `Розпізнано: ${transcript}`;
+    
+                keywords.forEach(keyword => {
+                    if (transcript.includes(keyword.word)) {
+                        document.getElementById("status").innerText = `Знайдено ключове слово: ${keyword.word}`;
+                        
+                        const imgElement = document.createElement("img");
+                        imgElement.src = keyword.image;
+                        imgElement.alt = keyword.word;
+                        imgElement.width = 300; 
+                        document.getElementById("imageContainer").appendChild(imgElement);
+                    }
+                });
+            };
+    
+            recognition.onerror = (event) => {
+                document.getElementById("status").innerText = "Помилка розпізнавання голосу";
+            };
+        } else {
+            document.getElementById("status").innerText = "Розпізнавання голосу не підтримується у вашому браузері";
+        }
+    </script>
+    
+</body>
+</html>

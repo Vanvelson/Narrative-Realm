@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NarrativeRealm</title>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">NarrativeRealm</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./tips.html" class="nav-link">Tips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index_second.html">Recomended Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./add_book.html">Add Book</a>
+              </li>
+              <li class="nav-item">
+                <a href="./contacts.html" class="nav-link" href="./index_second.html">Contacts</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu">
+                  <a href="./forestSong.html">Forest Song</a>
+                  <a href="./paintedFox.html">Painted Fox</a>
+                </div>
+              </li>
+            </div>
+                  
+            </ul>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+            
+          </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form id="loginForm">
+            <div class="modal-body">
+                <div class="mb-3">
+                <label for="LoginInputEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="LoginInputEmail" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="loginInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="loginInputPassword1">
+              </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="registerModal">Register</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+            <form id="registerForm">
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="InputName" name="name" class="form-label">Name</label>
+                  <input type="name" class="form-control" id="InputName" aria-describedby="nameHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your name with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="InputEmail" name="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="InputPassword1" name="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="InputPassword1">
+                </div>
+                <!-- <div class="mb-3">
+                  <label for="InputPassword1" class="form-label">Re Password</label>
+                  <input type="password" class="form-control" id="InputPassword1">
+                </div> -->
+                <div class="mb-3 form-check">
+                  <input type="checkbox" name="news" class="form-check-input" id="Check1">
+                  <label class="form-check-label" for="Check1">News</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+  <section class="cloneable">
+    <div class="looping-words">
+      <div class="looping-words__containers">
+        <ul data-looping-words-list="" class="looping-words__list">
+          <li class="looping-words__list">
+            <p class="looping-words__p">Every Book</p>
+          </li>
+          <li class="looping-words__list">
+            <p class="looping-words__p">You Read</p>
+          </li>
+          <li class="looping-words__list">
+            <p class="looping-words__p">Opens</p>
+          </li>
+          <li class="looping-words__list">
+            <p class="looping-words__p">Endless</p>
+          </li>
+          <li class="looping-words__list">
+            <p class="looping-words__p">Possibilities</p>
+          </li>
+        </ul>
+      </div>
+      <div class="looping-words__fade"></div>
+      <div data-looping-words-selector="" class="looping-words__selector">
+        <div class="looping-words__edge"></div>
+        <div class="looping-words__edge is--2"></div>
+        <div class="looping-words__edge is--3"></div>
+        <div class="looping-words__edge is--4"></div>
+      </div>
+    </div>
+</section>
+
+    <main class="container my-3">
+      <button class="open" id="open_cart"><i class="gg-shopping-cart"></i></button>
+        <div id="module" class="hide">
+            <div class="content">
+                <h2>Пусто...</h2>
+                <button class="close" id="close_cart">Закрити</button>
+            </div>
+        </div>
+
+
+
+            
+        <div class="container">
+          <h1>Catalog</h1>
+          <div class="catalog" id="catalog"></div>
+        </div>
+      
+
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <img id="bookCover" alt="Обложка книги">
+            <h2 id="bookTitle"></h2>
+            <p><strong>Автор:</strong> <span id="bookAuthor"></span></p>
+            <p><strong>Вміст:</strong></p>
+            <p id="bookContent"></p>
+            <button id="audioButton">Audio:</button>
+          </div>
+        </div>
+    </main>
+
+
+    <div class="pre-footer">
+      <div class="rating-container">
+        <h1>How would you rate us?</h1>
+        <div class="stars-container">
+            <div class="star-box">
+                <span class="star" id="star1">★</span>
+            </div>
+            <div class="star-box">
+                <span class="star" id="star2">★</span>
+            </div>
+            <div class="star-box">
+                <span class="star" id="star3">★</span>
+            </div>
+            <div class="star-box">
+                <span class="star" id="star4">★</span>
+            </div>
+            <div class="star-box">
+                <span class="star" id="star5">★</span>
+            </div>
+        </div>
+        <div class="user-rating">
+            <h2 id="rating-text">No Rating</h2>
+            <span id="rating-stars">0 stars</span>
+        </div>
+      </div>
+    </div>
+  
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=YOUR_API_KEY"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>
