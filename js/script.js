@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const wordList = document.querySelector('[data-looping-words-list]');
   const words = Array.from(wordList.children);
   const totalWords = words.length;
-  const wordHeight = 100 / totalWords; // Offset as a percentage
+  const wordHeight = 100 / totalWords; 
   const edgeElement = document.querySelector('[data-looping-words-selector]');
   let currentIndex = 0;
   function updateEdgeWidth() {

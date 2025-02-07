@@ -1,6 +1,3 @@
-/*
-vars
-*/
 :root {
   --carousel-transition-duration: 250ms;
   --carousel-transition-ease: ease-out;
@@ -24,9 +21,6 @@ vars
   --carousel-direction-animation-play-state: paused;
 }
 
-/*
-global
-*/
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -128,7 +122,6 @@ nav {
   display: block;
 }
 
-/* Arrow icon */
 .arrow {
   border: solid #4a4a4a;
   border-width: 0 2px 2px 0;
@@ -206,9 +199,6 @@ main{
   height: 100vh;
 }
 
-/*
-carousel
-*/
 .carousel {
   --_diameter: var(--carousel-diameter);
   --_radius: calc(var(--_diameter) / 2);
@@ -218,7 +208,6 @@ carousel
   perspective-origin: var(--carousel-3d-perspective-origin);
   width: var(--_diameter);
   height: var(--_diameter);
-  /* border: 1px solid #ffffff; */
 }
 
 @media only screen and (max-width: 48rem) {

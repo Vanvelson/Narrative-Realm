@@ -4,7 +4,6 @@ window.addEventListener('scroll', function() {
     let scrollStep = window.scrollY/8
     lineTXT.style.transform = `translateX(${-scrollStep}px)` 
 });
-    /* modal */
 function openModal() {
     document.getElementById('registerModal').style.display = 'block';
 }
