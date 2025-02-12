@@ -99,13 +99,14 @@ document.getElementById("close_cart").onclick = function(){
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBpycTg_gn-xRsysMlvWOTK67qbAthMs4o",
-    authDomain: "novashop-bc762.firebaseapp.com",
-    projectId: "novashop-bc762",
-    storageBucket: "novashop-bc762.appspot.com",
-    messagingSenderId: "57262889635",
-    appId: "1:57262889635:web:0a0e1c2514044a95f73d16"
-  };
+  apiKey: "AIzaSyDxnV2Hssn-TG4H4UHG5R9OTDA--0KjolY",
+  authDomain: "gojourney-1ec9e.firebaseapp.com",
+  projectId: "gojourney-1ec9e",
+  storageBucket: "gojourney-1ec9e.appspot.com",
+  messagingSenderId: "635754660988",
+  appId: "1:635754660988:web:2a1137ed78e472188175f9",
+  measurementId: "G-3CQYNXGTY5"
+};
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
