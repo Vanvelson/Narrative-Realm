@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/forestSong.css">
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./img/5988242.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Narrative Realm</title>
 </head>
 <body>
@@ -20,134 +21,100 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./tips.html">Tips</a>
+                    <a href="./tips.html" class="nav-link">Tips</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./index_second.html">Recomended Books</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./add_book.html">Add Book</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./contacts.html" class="nav-link" href="./index_second.html">Contacts</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown
                     </a>
                     <div class="dropdown-menu">
-                      <a href="#">Courses</a>
-                      <a href="#">Corporate training</a>
-                      <hr>
-                      <h3>Goals</h3>
-                      <a href="#">Take a free course</a>
-                      <a href="#">Get a diploma</a>
-                      <a href="#">Get a certificate</a>
-                      <a href="#">Get a new profession</a>
-                      <h3>Themes</h3>
-                      <a href="#">Data science</a>
-                      <a href="#">Business</a>
-                      <a href="#">Computer science</a>
-                      <a href="#">Information Technology</a>
-                      <div class="last-item"></div>
-                  </div>  
-                </ul>
+                      <a href="./forestSong.html">Forest Song</a>
+                      <a href="./paintedFox.html">Painted Fox</a>
+                    </div>
+                  </li>
+                </div> 
+                </ul> 
               </div>
             </div>
         </nav>
     </header>
-    
 
     <main>
         <div class="container">
-            <h1>Лісова Пісня</h1>
-            <button id="startListening">Увімкнути розпізнавання голосу</button>
-            <div class="full_block">
-                <div id="catalog"></div>
-                <div class="content">
-                    <p id="status">Натисніть "Увімкнути розпізнавання голосу" та прочитайте ключове слово.</p>
-                    <div id="imageContainer"></div>
-                </div>
+            <h1>Forest Song</h1>
+            <button id="startListening">Start Voice Recognition</button>
+            <div id="status">Click "Start Voice Recognition" and say a keyword.</div>
+            <div id="bookText">
+                <p>Lukash enters the forest where Mavka is, she was standing near a tree. An old forest in Volyn, a wild and mysterious place. The beginning of spring. The Dam Breaker runs out of the forest. Vik talks with the wreckers and the Mermaid, who reminds him of her love, reproaches her for betrayal. The Waterman scolds the Mermaid for being with a deceitful stranger. He only deceives the Mermaid.</p>
+                <p>ACT ONE: In the same area, Uncle Lev and his nephew Lukash are going to build a hut. Lev is an old man, kind. Lukash is still a young man. The old man tells the boy that he must be careful with the forest dwellers. The Forester tells the Mermaid that Lev will not harm them. Lukash makes a pipe from reeds, the sound of which attracts Mavka...</p>
             </div>
+            <div id="imageContainer"></div>
         </div>
     </main>
-    
-    <script type="module">
-        const books = [
-            { id: 1, title: "Lukash enters the forest where Mavka is, she was standing on a birch. An old forest in Volyn, a wild and mysterious place. The beginning of spring. The Dam Breaker runs out of the forest. Vik talks with the wreckers and the Mermaid, who reminds him of her love, reproaches her for betrayal. The Waterman scolds the Mermaid for being with a deceitful stranger. He only deceives the Mermaid. ACT ONE In the same area, Uncle Lev and his nephew Lukash are going to build a hut. Lev is an old man, kind. Lukash is still a young man. The old man tells the boy that he must be careful with the forest dwellers. The Forester tells the Mermaid that Lev will not harm them. Lukash makes a pipe from reeds, the sound of which attracts Mavka, who had previously spoken to the Forester. The forest ranger warned the girl to avoid people, because they only bring trouble. When Lukash is about to cut a birch tree with a knife, Mavka stops him and asks him not to hurt his sister. Lukash is surprised that he met such an unusually lush and beautiful maiden in the forest, and asks who she is. She is called Mavka of the Forest. Lukash likes the girl for her changeable beauty, gentle language, and sensitivity to music and beauty. He tells her that people mate with each other when they are in love. The boy also tells Mavka that they are going to build a hut in the forest. Mavka and Lukash fall in love with each other. ACT TWO Late summer, a hut has already been built in the clearing, a vegetable garden has been planted. Mother scolds Lukash for wasting time playing the flute. She also shouts at Mavka, calling her a useless, useless brat. He scolds her for her clothes, sends her to reap. But Mavka cannot reap the ears of corn, because they speak to her. Lukash explains to Mavka that her mother needs a daughter-in-law who would work in the field and in the house. Mavka struggles to understand all these laws with her infatuated heart, but such petty worries are alien to her, she lives in universal beauty. The widow Kylina comes to the farmstead. She takes Mavka's sickle and begins to reap. She jokes with Lukash, and then goes to the house. Her mother receives her kindly. Lukash escorts Kylina to the village. Mavka suffers, but Rusalka calms them down, but warns against love that can ruin a free soul. He warns Mavka and the Forester. He asks her to remember her will, the beauty of nature, and to free herself from the bonds of human love. Mavka is going to become a forest princess again. She dresses in a purple dress, a silver veil. The Forester begins to court her. They start dancing. But Maryshche appears, wanting to take Mavka away. She screams that she is still alive. Lukash treats Mavka rudely and shouts to her mother that he wants to send the elders to Kylina. Out of grief, Mavka goes to Maryshche. ACT THREE On a cloudy autumn night, Mavka's figure looms near Lukash's hut. The Forester emerges from the forest. He explains that he ordered Lukash to be turned into a werewolf. But Mavka hopes to turn him into a human with the power of her love. Lukash is afraid of Mavka and runs away from her. Kuts tells that poverty reigns in Lukash's family, his mother-in-law and daughter-in-law are fighting. Mavka turns into a dry willow, from which the boy of Kylina carves a flute. The flute speaks in Mavka's voice: How sweetly it plays, how deeply it cuts, it cuts open my chest, it takes out my heart... Kylina wants to cut down the willow, but Perelesnyk saves her. Kylina asks her husband to return to the village. The lost Dolya arrives, pointing to the flute. Lukash gave Mavka a soul, but deprived her of her body. But she does not grieve for her body, her love is now eternal. Lukash begins to play. Mavka flashes with her old beauty, and the man rushes to her. But she disappears. It begins to snow. Lukash freezes with a smile on his lips. The Forest Song embodies the folk perception of the surrounding world, the ancient mythological thinking of Ukrainians. The problem of the relationship between man and nature, which is very often not harmonious, is acute. Man is used to treating nature as a means that makes his life more comfortable. Using natural gifts, man does not notice his harmful actions. Mavka is the embodiment not only of the beauty and defenselessness of nature, but also of the spiritual beauty of man, which cannot be destroyed in everyday petty worries. It is eternally reborn."},            
+
+    <script>
+        const keywords = [
+            { "word": "Mavka", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTBYD45iOXwx8M2mSPCPs5L4KXRIDB9vkVQ&s" },
+            { "word": "mafka", "image": "https://static.ukrinform.com/photos/2023_02/thumb_files/630_360_1675255427-859.jpg" },
+            { "word": "Lucas", "image": "https://cdn.fakty.com.ua/wp-content/uploads/sites/3/2023/04/25/imgonline-com-ua-resize-ohskacmcioymkj.png" },
+            { "word": "Forest", "image": "https://st5.depositphotos.com/12546280/63855/v/450/depositphotos_638556134-stock-illustration-landscape-nature-green-forest-mountain.jpg" },
+            { "word": "forest", "image": "https://st5.depositphotos.com/12546280/63855/v/450/depositphotos_638556134-stock-illustration-landscape-nature-green-forest-mountain.jpg" },
+            { "word": "tree", "image": "https://s3-eu-west-1.amazonaws.com/blog-ecotree/blog/0001/01/ad46dbb447cd0e9a6aeecd64cc2bd332b0cbcb79.jpeg" },
+            { "word": "3", "image": "https://s3-eu-west-1.amazonaws.com/blog-ecotree/blog/0001/01/ad46dbb447cd0e9a6aeecd64cc2bd332b0cbcb79.jpeg" },
+            { "word": "wolf", "image": "https://www.prowse.com.ua/wp-content/uploads/2024/03/wervolf.jpg" },
+            { "word": "mysterious place", "image": "https://cojo.ru/wp-content/uploads/2022/12/voprositelnyi-znak-12.webp" },
+            { "word": "spring", "image": "https://www.abc27.com/wp-content/uploads/sites/55/2022/03/GettyImages-1130636356.jpg?w=1280" },
+            { "word": "mermaid", "image": "https://knigoland.com.ua/upload/resize_cache/iblock/6e2/500_500_140cd750bba9870f18aada2478b24840a/g6yauif1wzpymxn4xt2mw28zuuscans2.webp" },
+            { "word": "love", "image": "https://glavcom.ua/img/article/9086/42_pb-v1676456210.jpg" }
+
         ];
 
-        const keywords = [
-            { word: "Мавка", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTBYD45iOXwx8M2mSPCPs5L4KXRIDB9vkVQ&s" },
-            { word: "mвка", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTBYD45iOXwx8M2mSPCPs5L4KXRIDB9vkVQ&s" },
-            { word: "Лукаш", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHE4CmOPjx1upcr3uWKCkx_iGPBzx3e7QX6A&s" },
-            { word: "Forest", image: "https://st5.depositphotos.com/12546280/63855/v/450/depositphotos_638556134-stock-illustration-landscape-nature-green-forest-mountain.jpg" },
-            { word: "сопілка", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh9iES2Ud_Tt8NtVjjnGbWNegvKmOA5Lsppg&s" },
-            { word: "вовкулака", image: "https://www.prowse.com.ua/wp-content/uploads/2024/03/wervolf.jpg" },
-            { word: "мавка", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTBYD45iOXwx8M2mSPCPs5L4KXRIDB9vkVQ&s" },
-            { word: "лукаш", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHE4CmOPjx1upcr3uWKCkx_iGPBzx3e7QX6A&s" },
-            { word: "Ліс", image: "https://st5.depositphotos.com/12546280/63855/v/450/depositphotos_638556134-stock-illustration-landscape-nature-green-forest-mountain.jpg" },
-            { word: "Сопілка", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh9iES2Ud_Tt8NtVjjnGbWNegvKmOA5Lsppg&s" },
-            { word: "Вовкулака", image: "https://www.prowse.com.ua/wp-content/uploads/2024/03/wervolf.jpg" },
-            { word: "birch", image: "https://foni.papik.pro/uploads/posts/2024-09/foni-papik-pro-4r0i-p-kartinki-bereza-dlya-detei-na-prozrachnom-1.png" },
-            { word: "лісовик", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQXU6S_2hV4I5p_92Yr4fBGQm2bVWSv-UoCw&s" },
-            { word: "водяник", image: "https://www.prowse.com.ua/wp-content/uploads/2024/03/wervolf.jpg" },
-            { word: "Русалка", image: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Mermaid.jpg" },
-            { word: "Лев", image: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Lion_head.jpg" },
-            { word: "мавка лісова", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTBYD45iOXwx8M2mSPCPs5L4KXRIDB9vkVQ&s" },
-            { word: "Birch", image: "https://foni.papik.pro/uploads/posts/2024-09/foni-papik-pro-4r0i-p-kartinki-bereza-dlya-detei-na-prozrachnom-1.png" },
-            { word: "бірч", image: "https://foni.papik.pro/uploads/posts/2024-09/foni-papik-pro-4r0i-p-kartinki-bereza-dlya-detei-na-prozrachnom-1.png" },
-            { word: "Birch", image: "https://foni.papik.pro/uploads/posts/2024-09/foni-papik-pro-4r0i-p-kartinki-bereza-dlya-detei-na-prozrachnom-1.png" },
-];
-    
-        function displayCatalog() {
-            const catalog = document.getElementById("catalog");
-            books.forEach(book => {
-                const card = document.createElement("div");
-                card.classList.add("card");
-                card.innerHTML = `
-                    <p>${book.title}</p>
-                    <p>Автор: Леся Українка</p>
-                `;
-                catalog.appendChild(card);
-            });
-        }
-    
-        displayCatalog();
-    
         if ('webkitSpeechRecognition' in window) {
             const recognition = new webkitSpeechRecognition();
-            recognition.lang = "uk-UA";
+            recognition.lang = "en-US";
             recognition.continuous = true;
             recognition.interimResults = false;
-    
+
             document.getElementById("startListening").onclick = () => {
                 recognition.start();
-                document.getElementById("status").innerText = "Слухаю...";
+                document.getElementById("status").innerText = "Listening...";
             };
-    
+
             recognition.onresult = (event) => {
                 const transcript = event.results[event.results.length - 1][0].transcript.trim();
-                document.getElementById("status").innerText = `Розпізнано: ${transcript}`;
-    
+                document.getElementById("status").innerText = `Recognized: ${transcript}`;
+
                 keywords.forEach(keyword => {
                     if (transcript.includes(keyword.word)) {
-                        document.getElementById("status").innerText = `Розпізнано: ${keyword.word}`;
-                        
                         const imgElement = document.createElement("img");
                         imgElement.src = keyword.image;
                         imgElement.alt = keyword.word;
-                        imgElement.width = 300; 
-                        document.getElementById("imageContainer").appendChild(imgElement);
+
+                        const imageContainer = document.getElementById("imageContainer");
+                        imageContainer.innerHTML = ""; // Clear previous images
+                        imageContainer.appendChild(imgElement);
                     }
                 });
             };
-    
-            recognition.onerror = (event) => {
-                document.getElementById("status").innerText = "Помилка розпізнавання голосу";
+
+            recognition.onerror = () => {
+                document.getElementById("status").innerText = "Error recognizing speech.";
             };
         } else {
-            document.getElementById("status").innerText = "Розпізнавання голосу не підтримується у вашому браузері";
+            document.getElementById("status").innerText = "Voice recognition not supported in this browser.";
         }
-        
     </script>
-    
 </body>
 </html>
