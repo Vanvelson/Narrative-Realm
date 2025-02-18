@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/forestSong.css">
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./img/5988242.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Narrative Realm</title>
 </head>
 <body>
@@ -20,13 +21,19 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./tips.html">Tips</a>
+                    <a href="./tips.html" class="nav-link">Tips</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./index_second.html">Recomended Books</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./add_book.html">Add Book</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./contacts.html" class="nav-link" href="./index_second.html">Contacts</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,95 +44,90 @@
                       <a href="./paintedFox.html">Painted Fox</a>
                     </div>
                   </li>
-                </ul>
+                </div> 
+                </ul> 
               </div>
             </div>
         </nav>
     </header>
-    
 
     <main>
         <div class="container">
-            <h1>Фарбований лис</h1>
-            <button id="startListening">Увімкнути розпізнавання голосу</button>
-            <div class="full_block">
-                <div id="catalog"></div>
-                <div class="content">
-                    <p id="status">Натисніть "Увімкнути розпізнавання голосу" та прочитайте ключове слово.</p>
-                    <div id="imageContainer"></div>
-                </div>
+            <h1>Painted Fox</h1>
+            <button id="startListening">Start Voice Recognition</button>
+            <div id="status">Click "Start Voice Recognition" and say a keyword.</div>
+            <div id="bookText">
+                <p>In the forest lived a cunning Fox Nikita. He avoided traps, helped his comrades and became very arrogant. Once the Fox boasted that he would steal a chicken from the market in broad daylight. Having made his way to the city, he barely escaped from the dogs, hiding in a pot of paint. Having turned blue, the Fox scared all the animals and decided to pretend to be the king. He declared that he was created by Saint Nicholas, and all the animals obeyed.</p>
+                <p>Nikita lived in abundance and distributed food to others, but he was afraid that the paint would come off. At the celebration, he could not restrain himself and barked like a fox, which was why he was exposed. Enraged by the deception, the animals attacked the Fox and tore him apart...</p>
             </div>
+            <div id="imageContainer"></div>
         </div>
     </main>
-    
-    <script type="module">
-        const books = [
-            { id: 1, title: "Жив собі в одному лісі Лис Микита, хитрий-прехитрий. Скільки мисливці на нього не полювали, він завжди втікав, оминав пастки, ще й товаришів застерігав від небезпеки. Надзвичайне везіння та хитрість зробили Лиса страшенно гордим. Він похвалився перед друзями, що серед білого дня вкраде на базарі курку. Сказав — треба зробити. Непомітно пробрався городами до середини міста, але коли вискочив на вулицю, то його почули пси й кинулися до нього. Що робити? Куди дітися? Лис побачив одчинені ворота й чкурнув туди. На подвір`ї стояла діжа з фарбою. Йому нічого не залишалося, як пірнути в ту фарбу. Пси й не здогадалися, бо від діжі йшов такий неприємний запах. Отже, Лис урятувався, але якою ціною! Як йому в такому вигляді з'явитися на вулиці? Довелося так аж до самого вечора сидіти, завмираючи від страху, що надійде господар-маляр. Коли смеркло, Микита чимдуж чкурнув до лісу, ускочив у якусь нору та й заснув. Уранці прокинувся в доброму настрої, подумав, що зараз підхожий час для полювання, але, зиркнувши на себе, скрикнув і кинувся тікати з переляку. Та від себе ж не втечеш! Став він якимсь дивним і страшним звіром, синім-синім, укритим чи лускою, чи їжаковими колючками, із хвостом, як довбня. Що лишень не пробував — обтріпатися, обкачатися, обдряпати фарбу — нічого не виходить! Де не взявся Вовчик-Братик. Як побачив нечуваного синього звіра — аж завив з переляку й кинувся тікати. Звірі, що бачили Вовчика в такому стані, здивувалися, стали розпитувати і, не добившись нічого, пішли в той бік, куди показував Вовк. Побачили — і собі врозтіч. А Лис Микита, бачачи, яке враження справив, подумав, що не так усе й погано. Пішов і сів посеред майдану, де всі лісові мешканці збиралися. Незабаром позбігалося багато звірів, але підступити бояться. Тоді Лис перший ласкаво до них заговорив. Він сказав, що Святий Миколай виліпив його з небесної глини, назвав Остромислом і призначив царем над усіма звірами. У звіринім царстві запанувала радість. Орли та яструби наловили курей, вовки та ведмеді нарізали овець, телят і віднесли новому цареві. Той узяв часточку собі, а решту віддав голодним. Усі хвалили царську доброту та мудрість. Лис Микита був добрим царем, жив на всьому готовому. І справедливість у нього була, як звичайно у звірів: хто дужчий, той і правий, а хто слабший, той ніколи не вигравав справи. Жили собі звірі з новим царем, як і без нього: хто що зловив, те й їв; кого спіймали, той гинув, а хто втік, той радів. Але всі були вдоволені, що мають такого мудрого й не схожого на інших звірів царя. Лис Микита дуже беріг своє синє хутро, боявся, щоб із нього не злізла фарба і його не впізнали. Минув рік. Звірі вирішили відзначити ювілей і влаштували великий концерт. Ведмеді ревли басом, вовки завивали соло. Але як молоді лисички в народному вбранні задзявкотіли тоненькими тенорами, цар не зміг устояти. Він підняв морду і задзявкотів по-лисячому. Що тут зробилося! Усі відразу впізнали Лиса. Люті за обман, забувши про всі добродійства царя, звірі кинулися на Лиса й розірвали його."},            
+
+    <script>
+        const keywords = [
+            { "word": "Forest", "image": "https://static.vecteezy.com/system/resources/previews/021/182/343/non_2x/forest-nature-scene-for-cartoon-animation-vector.jpg" },
+            { "word": "forest", "image": "https://static.vecteezy.com/system/resources/previews/021/182/343/non_2x/forest-nature-scene-for-cartoon-animation-vector.jpg" },
+            { "word": "Nikita", "image": "https://mediananny.com/content/images_new/news/620x408/164918.jpg" },
+            { "word": "nikita", "image": "https://mediananny.com/content/images_new/news/620x408/164918.jpg" },
+            { "word": "Fox", "image": "https://mediananny.com/content/images_new/news/620x408/164918.jpg" },
+            { "word": "fox", "image": "https://mediananny.com/content/images_new/news/620x408/164918.jpg" },
+            { "word": "Traps", "image": "https://static.vecteezy.com/system/resources/previews/001/234/020/non_2x/set-of-various-cartoon-animal-traps-vector.jpg" },
+            { "word": "traps", "image": "https://static.vecteezy.com/system/resources/previews/001/234/020/non_2x/set-of-various-cartoon-animal-traps-vector.jpg" },
+            { "word": "Arrogant", "image": "https://ulvovi.info/sites/default/files/styles/wide_background/public/images/news/2017/10/233812.jpg?itok=eaBq3VJJ" },
+            { "word": "arrogant", "image": "https://ulvovi.info/sites/default/files/styles/wide_background/public/images/news/2017/10/233812.jpg?itok=eaBq3VJJ" },
+            { "word": "Chicken", "image": "https://c.wallhere.com/photos/80/8b/fried_chicken_chickens-27557.jpg!d" },
+            { "word": "chicken", "image": "https://c.wallhere.com/photos/80/8b/fried_chicken_chickens-27557.jpg!d" },
+            { "word": "Market", "image": "https://img.freepik.com/free-vector/food-market-stalls-with-fruits-vegetables-cheese-meat-fish-counter-crates_107791-4733.jpg" },
+            { "word": "market", "image": "https://img.freepik.com/free-vector/food-market-stalls-with-fruits-vegetables-cheese-meat-fish-counter-crates_107791-4733.jpg" },
+            { "word": "Daylight", "image": "https://img.freepik.com/free-vector/summer-landscape-with-lawn-bridge-pond_107791-14346.jpg" },
+            { "word": "daylight", "image": "https://img.freepik.com/free-vector/summer-landscape-with-lawn-bridge-pond_107791-14346.jpg" },
+            { "word": "City", "image": "https://www.onetwotrip.com/ru/blog/wp-content/uploads/2018/09/beauty-and-the-beast.jpg" },
+            { "word": "city", "image": "https://www.onetwotrip.com/ru/blog/wp-content/uploads/2018/09/beauty-and-the-beast.jpg" },
+            { "word": "Dogs", "image": "https://казка.укр/farbovanij_lis/4.jpg" },
+            { "word": "dogs", "image": "https://казка.укр/farbovanij_lis/4.jpg" },
+            { "word": "Paint", "image": "https://fs05.vseosvita.ua/05013yek-4e62-1200x630.jpg" },
+            { "word": "paint", "image": "https://fs05.vseosvita.ua/05013yek-4e62-1200x630.jpg" },
+            { "word": "Blue", "image": "https://dovidka.biz.ua/wp-content/uploads/2014/09/farbovaniy-lis-skorocheno.png" },
+            { "word": "blue", "image": "https://dovidka.biz.ua/wp-content/uploads/2014/09/farbovaniy-lis-skorocheno.png" },
+
+
         ];
 
-        const keywords = [
-            { word: "Лис Микита", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLWm7KnsoCPt5Sc1E_ltSJktG6us8fEvbRJQ&s" },
-            { word: "ліс", image: "https://st5.depositphotos.com/12546280/63855/v/450/depositphotos_638556134-stock-illustration-landscape-nature-green-forest-mountain.jpg" },
-            { word: "мисливці", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP9YERqSOyrQ1Lyjax3wDWG0WbXy9-jJ2UIPzs7L8HbDqG9Ij3CspKPvrFOrgPEY5n2-g&usqp=CAU" },
-            { word: "курка", image: "https://st4.depositphotos.com/1967477/20313/v/450/depositphotos_203132380-stock-illustration-chicken-hen-waving-hand-white.jpg" },
-            { word: "пси", image: "https://media.istockphoto.com/id/990360418/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D1%84%D0%B8%D0%BB%D1%8C%D0%BC-%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8-%D1%82%D1%80%D1%8E%D0%BA%D0%B8-%D0%B8-%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D1%8F-%D0%BA%D0%BE%D0%BF%D0%B0%D1%82%D1%8C-%D0%B3%D1%80%D1%8F%D0%B7%D1%8C-%D0%B5%D1%81%D1%82%D1%8C-%D0%BA%D0%BE%D1%80%D0%BC%D0%B0-%D0%B4%D0%BB%D1%8F-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8%D1%85.jpg?s=612x612&w=0&k=20&c=krsI0CKB5MctPTxOGUszd6QXw1kDzxvfpUxO7Cc13yI=" },
-            { word: "діжа з фарбою", image: "https://dovidka.biz.ua/wp-content/uploads/2014/09/farbovaniy-lis-chitati-povn-styu.png" },
-            { word: "Святий Миколай", image: "https://imglife.pravda.com.ua/images/doc/9/c/9c62d02-537.-------------------2023-12-05t231535.jpg" },
-            { word: "ведмеді", image: "https://images.kinorium.com/movie/shot/2390870/h280_51941068.jpg?21694997538" },
-            { word: "вовки", image: "https://images.kinorium.com/movie/shot/733001/h280_52117084.jpg?21702726149" },
-            { word: "лисички", image: "https://ntn.ua/uploads/tv_product/2020/07/24/5eebfcb177114ec155ad78c3f11dbc8aeff45a29.png" }
-        ];
-    
-        function displayCatalog() {
-            const catalog = document.getElementById("catalog");
-            books.forEach(book => {
-                const card = document.createElement("div");
-                card.classList.add("card");
-                card.innerHTML = `
-                    <p>${book.title}</p>
-                    <p>Автор: Леся Українка</p>
-                `;
-                catalog.appendChild(card);
-            });
-        }
-    
-        displayCatalog();
-    
         if ('webkitSpeechRecognition' in window) {
             const recognition = new webkitSpeechRecognition();
-            recognition.lang = "uk-UA";
+            recognition.lang = "en-US";
             recognition.continuous = true;
             recognition.interimResults = false;
-    
+
             document.getElementById("startListening").onclick = () => {
                 recognition.start();
-                document.getElementById("status").innerText = "Слухаю...";
+                document.getElementById("status").innerText = "Listening...";
             };
-    
+
             recognition.onresult = (event) => {
                 const transcript = event.results[event.results.length - 1][0].transcript.trim();
-                document.getElementById("status").innerText = `Розпізнано: ${transcript}`;
-    
+                document.getElementById("status").innerText = `Recognized: ${transcript}`;
+
                 keywords.forEach(keyword => {
                     if (transcript.includes(keyword.word)) {
-                        document.getElementById("status").innerText = `Знайдено ключове слово: ${keyword.word}`;
-                        
                         const imgElement = document.createElement("img");
                         imgElement.src = keyword.image;
                         imgElement.alt = keyword.word;
-                        imgElement.width = 300; 
-                        document.getElementById("imageContainer").appendChild(imgElement);
+
+                        const imageContainer = document.getElementById("imageContainer");
+                        imageContainer.innerHTML = ""; 
+                        imageContainer.appendChild(imgElement);
                     }
                 });
             };
-    
-            recognition.onerror = (event) => {
-                document.getElementById("status").innerText = "Помилка розпізнавання голосу";
+
+            recognition.onerror = () => {
+                document.getElementById("status").innerText = "Error recognizing speech.";
             };
         } else {
-            document.getElementById("status").innerText = "Розпізнавання голосу не підтримується у вашому браузері";
+            document.getElementById("status").innerText = "Voice recognition not supported in this browser.";
         }
     </script>
-    
 </body>
 </html>
